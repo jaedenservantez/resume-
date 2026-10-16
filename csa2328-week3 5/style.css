@@ -1,0 +1,126 @@
+/* Base styles: readable colors, fonts, and spacing */
+body {
+    background-color: #f2f6fb;
+    color: #202b3c;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+header {
+    background-color: #142d4e;
+    color: #ffffff;
+    padding: 1.5rem 5%;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 0 0 0.75rem;
+}
+
+h2 {
+    color: #286a8e;
+    font-size: 1.5rem;
+    margin-top: 0;
+}
+
+h3 {
+    color: #142d4e;
+    font-size: 1.15rem;
+}
+
+main {
+    background-color: #ffffff;
+    margin: 1.5rem auto;
+    padding: 1.5rem;
+    width: 90%;
+    max-width: 900px;
+}
+
+/* Navigation: descendant selector plus hover and keyboard focus */
+nav a {
+    background-color: #286a8e;
+    border-radius: 5px;
+    color: #ffffff;
+    display: inline-block;
+    margin: 4px;
+    padding: 8px 14px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #e3a83b;
+    color: #142d4e;
+}
+
+nav a:focus {
+    outline: 3px solid #e3a83b;
+    outline-offset: 3px;
+}
+
+/* Portfolio sections and class selectors */
+section {
+    border-bottom: 1px solid #d7e2ee;
+    margin-bottom: 1rem;
+    padding: 1rem 0;
+}
+
+.intro {
+    background-color: #f8fbff;
+    border-left: 4px solid #286a8e;
+    padding: 1rem;
+}
+
+.profile-photo {
+    border: 4px solid #e3a83b;
+    border-radius: 8px;
+    display: block;
+    height: auto;
+    margin: 1rem 0;
+    max-width: 100%;
+    width: 300px;
+}
+
+.skills {
+    background-color: #f8fbff;
+    padding: 1rem;
+}
+
+.achievement-list li {
+    margin-bottom: 0.35rem;
+}
+
+/* ID selector: one specific section on the home page */
+#education {
+    border-left: 4px solid #e3a83b;
+    padding-left: 1rem;
+}
+
+/* Descendant styling for lists inside main content */
+main ul {
+    padding-left: 1.5rem;
+}
+
+/* Footer styling */
+footer {
+    background-color: #142d4e;
+    color: #ffffff;
+    padding: 1rem 5%;
+    text-align: center;
+}
+
+/* Narrow-window support */
+@media (max-width: 600px) {
+    main {
+        box-sizing: border-box;
+        margin: 1rem auto;
+        padding: 1rem;
+        width: 94%;
+    }
+
+    nav a {
+        padding: 7px 10px;
+    }
+}
