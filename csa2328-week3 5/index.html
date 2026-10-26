@@ -2,72 +2,66 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Resume - Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio and resume website for Jaeden Servantez.">
+    <title>Jaeden Servantez | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <header>
-        <h1>My Resume</h1>
-        <nav>
-            <a href="index.html">Home</a>
+<body id="top">
+<header class="site-header">
+    <div class="header-inner">
+        <div class="brand"><p class="eyebrow">STUDENT PORTFOLIO</p><h1>Jaeden Servantez</h1></div>
+        <nav aria-label="Main navigation">
+            <a class="active" href="index.html">Home</a>
             <a href="hobbies.html">Hobbies</a>
             <a href="contact.html">Contact</a>
         </nav>
-    </header>
-
-    <main>
-        <section>
-            <h2>Profile</h2>
-            <img src="images/profile.jpg" alt="Hiker viewing a mountain and lake landscape" width="500">
-            <p>Hello! My name is Jaeden. I am a college student at Sul Ross University who is interested in technology, web development, and building useful computer skills. This website is a simple HTML5 resume project for CSA 2328 Web Page Development.</p>
-        </section>
-
-        <section>
-            <h2>Summary / Objective</h2>
-            <p>I am a motivated college student working toward building a strong foundation in technology and web development. I enjoy learning new skills, solving problems, and finding ways to improve my work. Through my college coursework, I am developing experience with HTML5, computer technology, communication, and creating organized digital projects.</p>
-            <p>My objective is to continue growing my technical and professional skills while gaining experience that can prepare me for a career in technology or web development. I want to keep learning, take on new challenges, and use the skills I develop in college to create useful and professional work.</p>
-        </section>
-
-        <section>
-            <h2>Education</h2>
-            <p><strong>Sul Ross University</strong><br>
-            College Student<br>
-            Expected Graduation: 2028</p>
-        </section>
-
-        <section>
-            <h2>Work Experience</h2>
-            <h3>Student / Web Development Project</h3>
-            <p><strong>College Coursework</strong> | 2026-Present</p>
-            <ul>
-                <li>Created basic HTML5 webpages using proper document structure.</li>
-                <li>Practiced headings, paragraphs, lists, links, images, and file paths.</li>
-                <li>Tested webpages and corrected navigation and image-path errors.</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Skills</h2>
-            <ul>
-                <li>HTML5 fundamentals</li>
-                <li>Basic web page development</li>
-                <li>Microsoft Office</li>
-                <li>Communication and teamwork</li>
-                <li>Problem solving</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Achievements</h2>
-            <ul>
-                <li>Completed introductory HTML5 web development projects.</li>
-                <li>Built a multi-page website using relative file paths.</li>
-                <li>Completed coursework involving technology, business, and statistics.</li>
-            </ul>
-        </section>
-    </main>
-
-    <footer>
-        <p>Jaeden Servantez | &copy; 2026 | Educational practice website</p>
-    </footer>
+    </div>
+</header>
+<main class="page-shell">
+    <section class="hero intro">
+        <div class="hero-copy">
+            <p class="eyebrow">WEB PAGE DEVELOPMENT · CSA 2328</p>
+            <h2>Learning by building.</h2>
+            <p>Hello! My name is Jaeden Servantez. I am a college student at Sul Ross University interested in technology, web development, and building useful computer skills. This portfolio shows my coursework, interests, and progress as I learn to create websites.</p>
+            <div class="hero-actions"><a class="button button-primary" href="#projects">View my projects</a><a class="button button-secondary" href="contact.html">Get in touch</a></div>
+        </div>
+        <img class="profile-photo" src="images/profile.jpg" alt="Photo of Jaeden Servantez">
+    </section>
+    <section class="content-section">
+        <h2>Summary / Objective</h2>
+        <p>I am a motivated college student working toward building a strong foundation in technology and web development. I enjoy learning new skills, solving problems, and finding ways to improve my work. Through my college coursework, I am developing experience with HTML5, computer technology, communication, and creating organized digital projects.</p>
+        <p>My objective is to continue growing my technical and professional skills while gaining experience that can prepare me for a career in technology or web development.</p>
+    </section>
+    <section id="education" class="content-section">
+        <h2>Education</h2>
+        <p><strong>Sul Ross University</strong><br>Computer and Web Development Coursework<br>College Student<br>Expected Graduation: 2028</p>
+    </section>
+    <section class="content-section">
+        <h2>Work Experience</h2>
+        <h3>Student / Web Development Project</h3>
+        <p><strong>College Coursework</strong> | 2026–Present</p>
+        <ul><li>Created basic HTML5 webpages using proper document structure.</li><li>Practiced headings, paragraphs, lists, links, images, and file paths.</li><li>Tested webpages and corrected navigation and image-path errors.</li></ul>
+    </section>
+    <section class="content-section skills-section">
+        <h2>Skills</h2>
+        <p>Skills I am developing through class and independent practice.</p>
+        <ul class="skill-list"><li>HTML5 fundamentals</li><li>Basic web development</li><li>Microsoft Office</li><li>Communication</li><li>Teamwork</li><li>Problem solving</li></ul>
+    </section>
+    <section id="projects" class="content-section projects-section">
+        <div class="section-heading"><div><p class="eyebrow">SELECTED COURSEWORK</p><h2>Project Gallery</h2></div><p>Examples of the kinds of projects and skills I am practicing.</p></div>
+        <div class="project-grid">
+            <a class="project-link project-featured-link" href="index.html#top" aria-label="Open the personal portfolio home page"><article class="project-card project-featured"><span class="project-number">01</span><div><h3>Personal Portfolio</h3><p>A multi-page portfolio built with semantic HTML and a shared stylesheet.</p><span class="tag">HTML · CSS</span><span class="project-cta">Open portfolio →</span></div></article></a>
+            <a class="project-link" href="README.md" aria-label="Read about the responsive layout project"><article class="project-card"><span class="project-number">02</span><div><h3>Responsive Layout</h3><p>A practice layout using Flexbox, Grid, and media queries for different screens.</p><span class="tag">Responsive design</span><span class="project-cta">View project notes →</span></div></article></a>
+            <a class="project-link" href="hobbies.html" aria-label="Open the hobbies page"><article class="project-card"><span class="project-number">03</span><div><h3>Hobbies Page</h3><p>A page sharing personal interests and how they shape my life outside class.</p><span class="tag">Content design</span><span class="project-cta">Open hobbies page →</span></div></article></a>
+            <a class="project-link" href="contact.html" aria-label="Open the contact page"><article class="project-card"><span class="project-number">04</span><div><h3>Contact Page</h3><p>A clear contact layout with useful links and simple, accessible navigation.</p><span class="tag">Usability</span><span class="project-cta">Open contact page →</span></div></article></a>
+        </div>
+    </section>
+    <section class="content-section">
+        <h2>Achievements</h2>
+        <ul class="achievement-list"><li>Completed introductory HTML5 web development projects.</li><li>Built a multi-page website using relative file paths.</li><li>Completed coursework involving technology, business, and statistics.</li></ul>
+    </section>
+</main>
+<footer><p>Jaeden Servantez | © 2026 | Educational practice website</p></footer>
 </body>
 </html>
